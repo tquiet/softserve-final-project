@@ -106,6 +106,12 @@ body {
     padding: .375rem 2.75rem;
 }
 
+.vinil-store .vinil-list .card .btn-buy:hover {
+    outline: none;
+    transition: 0.3s;
+    background-color: #6c757d;
+}
+
 
 .card-body {
     padding: 10px 0 0 0;
@@ -159,6 +165,12 @@ body {
 
 .player-store .card-body .btn-buy {
     padding: .375rem 2.75rem;
+}
+
+.player-store .card-body .btn-buy:hover {
+    outline: none;
+    transition: 0.3s;
+    background-color: #6c757d;
 }
 
 
@@ -236,6 +248,25 @@ body {
     margin: 0 auto;
     margin-top: 40px;
     padding: .375rem 3.75rem;
+}
+
+.consultation .btn-load {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: .375rem 2.1rem;
+}
+
+.consultation .btn-submit:hover {
+    outline: none;
+    transition: 0.3s;
+    background-color: #6c757d;
+}
+
+.consultation .btn-load:hover {
+    outline: none;
+    transition: 0.3s;
+    background-color: #6c757d;
 }
 
 /* ------------------------------------------------ CONTACTS ------------------------------------------------ */
