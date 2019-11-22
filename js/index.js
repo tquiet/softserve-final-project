@@ -15,9 +15,10 @@ btnSave.onclick = (event) => {
     userNumber.value = '';
     userQuestion.value = '';
 };
+
 btnLoad.onclick = () => {
     event.preventDefault();
     userName.value = localStorage.getItem('user-name');
     userNumber.value = localStorage.getItem('user-number');
     userQuestion.value = localStorage.getItem('user-question');
-}
+};
