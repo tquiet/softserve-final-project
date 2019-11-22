@@ -1,0 +1,641 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    background: url(../img/header/header.jpeg) no-repeat center center /cover;
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    padding: 10px 0;
+}
+
+.header-top .navbar-brand {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 74px;
+    line-height: 35px;
+    letter-spacing: 5px;
+}
+
+.header-top ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;
+    margin-left: 40px;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.header-top ul li a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #000;
+    height: 2px;
+    transform: scale(0);
+}
+
+.header-top ul li a:hover::after {
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.header-text .header-title {
+    background-color: #99A5AC;
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+    font-style: italic;
+    letter-spacing: 3px;
+    line-height: 75px;
+    padding: 0 10px;
+}
+
+
+/* ------------------------------------------------ SECTION VINIL STORE ------------------------------------------------ */
+.vinil-store {
+    padding: 50px 0;
+}
+
+.vinil-store .vinil-store__title {
+    color: #000;
+    font-weight: 700;
+    font-size: 45px;
+    font-style: italic;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.vinil-store .vinil-search {
+    margin-top: 35px;
+}
+
+.custom-select {
+    display: inline-block;
+    width: 115px;
+}
+
+
+.vinil-list {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vinil-list__item {
+    max-width: 30%;
+    margin: 10px;
+}
+
+.vinil-store .vinil-list .card .btn-buy {
+    padding: .375rem 2.75rem;
+}
+
+
+.card-body {
+    padding: 10px 0 0 0;
+}
+
+/* ------------------------------------------------ SECTION PLAYER ------------------------------------------------ */
+.player {
+    background: url(../img/player/0.jpg) no-repeat center center /cover;
+    height: 100vh;
+    padding-top: 70px;
+}
+
+.player h2 {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+    letter-spacing: 5px;
+    line-height: 65px;
+}
+
+.mobile-img {
+    display: none;
+}
+
+/* ------------------------------------------------ PLAYER STORE ------------------------------------------------ */
+.player-store {
+    padding: 50px 0;
+}
+
+.player-store .card-body .player-title {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.player-store .card-body .player-description {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+.player-store .player-img {
+    display: flex;
+    align-items: center;
+}
+
+.player-store .player-img img {
+    display: block;
+    width: 100%;
+}
+
+.player-store .card-body .btn-buy {
+    padding: .375rem 2.75rem;
+}
+
+
+/* ------------------------------------------------ CONSULTATION ------------------------------------------------ */
+.consultation {
+    padding: 30px 0;
+    background-color: #e4e4e4;
+    min-height: 350px;
+}
+
+.consultation h2 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.consultation form {
+    margin-top: 40px;
+}
+
+.user-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.consultation .user-name {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    height: 48px;
+    width: 350px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #B2B2B2;
+    padding-left: 10px;
+    opacity: .5;
+}
+
+.consultation .user-number {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    height: 48px;
+    width: 350px;
+    font-size: 15px;
+    font-weight: 300;
+    color: #B2B2B2;
+    padding-left: 10px;
+    opacity: .5;
+}
+
+.consultation .user-question {
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    color: #B2B2B2;
+    outline: none;
+    opacity: .5;
+    font-size: 15px;
+    font-weight: 300;
+    width: 550px;
+    min-height: 150px;
+    padding: 10px 10px;
+}
+
+.consultation .btn-submit {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: .375rem 3.75rem;
+}
+
+/* ------------------------------------------------ CONTACTS ------------------------------------------------ */
+.contacts {
+    padding: 25px;
+}
+
+.contacts .contacts-link {
+    display: flex;
+    justify-content: center;
+}
+
+.contacts .contacts-link .contacts-link__item {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 40px;
+    letter-spacing: 1px;
+}
+
+.contacts .contacts-link .contacts-link__item:hover {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.contacts .contacts-link .contacts-link__item:first-child {
+    margin-left: 0px;
+}
+
+.contacts .contacts-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts .contacts-social .contacts-title {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.contacts .contacts-social .contacts-social__item img {
+    display: block;
+    height: 40px;
+}
+
+.contacts .contacts-social .contacts-social__item a {
+    margin-left: 60px;
+}
+
+.contacts .contacts-social .contacts-social__item a:hover {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.contacts .contacts-social .contacts-social__item a:first-child {
+    margin-left: 0px;
+}
+
+.contacts .contacts-social .contacts-social__item {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* ------------------------------------------------ FOOTER ------------------------------------------------ */
+.footer {
+    padding: 20px 0;
+    background-color: #000;
+    text-align: center;
+}
+
+.footer .number {
+    text-decoration: none;
+}
+
+.footer .number:hover {
+    opacity: 0.5;
+    transition: all 0.3s;
+}
+
+.footer .number,
+.address {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.footer .address {
+    margin-top: 10px;
+}
+
+/* ------------------------------------------------ MEDIA ------------------------------------------------ */
+@media screen and (max-width: 991px) {
+    .header-top .navbar-brand {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+        background-color: #99A5AC;
+        opacity: 90%;
+    }
+
+    .header-text .header-title {
+        font-size: 40px;
+    }
+
+    .vinil-list__item {
+        max-width: 40%;
+    }
+
+    /* --- SECTION PLAYER --- */
+    .player-store .card-body .player-title {
+        font-size: 22px;
+    }
+
+    .player-store .card-body .player-description {
+        font-size: 14px;
+    }
+
+    /* --- SECTION CONSULTATION --- */
+    .consultation h2 {
+        font-size: 30px;
+    }
+
+    .user-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consultation .user-name {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .consultation .user-number {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .consultation .user-question {
+        width: 51%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header-top .navbar-brand {
+        font-size: 23px;
+        line-height: 27px;
+    }
+
+    .header-text .header-title {
+        font-size: 27px;
+        line-height: 50px;
+
+    }
+
+    /* --- VINIL-STORE --- */
+    .vinil-store .vinil-store__title {
+        font-size: 30px;
+    }
+
+    .vinil-store .vinil-list__item .artist-title {
+        font-size: 1.1rem;
+    }
+
+    .vinil-store .vinil-list__item .album-title {
+        font-size: 1.1rem;
+    }
+
+    .vinil-store .vinil-list__item .price {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* --- PLAYER --- */
+    .player h2 {
+        font-size: 40px;
+        line-height: 5px;
+    }
+
+    .player-store .card-body .player-title {
+        text-align: center;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+    }
+
+    .mobile-img {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .player-store .player-img img {
+        display: none;
+    }
+
+    /* --- SECTION CONSULTATION --- */
+    .consultation h2 {
+        font-size: 30px;
+    }
+
+    .user-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consultation .user-name {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .consultation .user-number {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .consultation .user-question {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+
+    /* -- HEADER -- */
+    .header-top .navbar-brand {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .header-text .header-title {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    /* --- VINIL-STORE --- */
+    .vinil-store .vinil-store__title {
+        font-size: 25px;
+    }
+
+    /* -- PLAYER -- */
+    .player {
+        padding-top: 50px;
+    }
+
+    .player h2 {
+        font-size: 31px;
+        line-height: 5px;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 480px) {
+
+    /* -- VINIL STORE -- */
+    .vinil-store .vinil-store__title {
+        font-size: 23px;
+    }
+
+    .vinil-list__item {
+        max-width: 90%;
+    }
+
+    .vinil-store .vinil-list__item .artist-title {
+        font-size: 1rem;
+    }
+
+    .vinil-store .vinil-list__item .album-title {
+        font-size: 1rem;
+    }
+
+    .vinil-store .vinil-list__item .price {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* --- SECTION CONSULTATION --- */
+    .consultation h2 {
+        font-size: 27px;
+    }
+
+    .user-wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .consultation .user-name {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .consultation .user-number {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+    .consultation .user-question {
+        width: 78%;
+    }
+
+    /* --- SECTION CONTACTS --- */
+    .contacts {
+        padding: 15px;
+    }
+
+    .contacts .contacts-link .contacts-link__item {
+        font-size: 12px;
+    }
+
+    .contacts .contacts-social .contacts-title {
+        font-size: 15px;
+    }
+
+    .contacts .contacts-social .contacts-social__item img {
+        display: block;
+        height: 27px;
+    }
+
+    .contacts .contacts-social .contacts-social__item {
+        margin-top: 10px;
+    }
+
+    /* --- SECTION FOOTER --- */
+    .footer {
+        padding: 14px 0;
+    }
+
+    .footer .number,
+    .address {
+        font-size: 14px;
+    }
+
+}
+
+
+@media screen and (max-width: 320px) {
+    .header-top .navbar-brand {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .header-text .header-title {
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    /* ----------- VINIL STORE ----------- */
+    .vinil-store {
+        padding: 30px 0;
+    }
+
+    .vinil-store .vinil-store__title {
+        font-size: 15px;
+    }
+
+    .vinil-list__item {
+        max-width: 90%;
+    }
+
+    /* ----------- PLAYER ----------- */
+    .player h2 {
+        font-size: 22px;
+    }
+
+    /* ----------- CONSULTATION ----------- */
+    .consultation h2 {
+        font-size: 18px;
+    }
+
+    .consultation .user-name {
+        width: 227px;
+    }
+
+    .consultation .user-number {
+        width: 227px;
+    }
+
+    /* ----------- CONTACTS ----------- */
+    .contacts .contacts-link .contacts-link__item {
+        font-size: 9px;
+    }
+}
